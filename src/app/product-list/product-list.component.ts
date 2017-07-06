@@ -8,11 +8,13 @@ import { Component } from '@angular/core';
 
 export class ProductList {
 
-	message(e) {
+	// Skiping error TS7006: Parameter 'event' implicitly has an 'any' type.
+
+	message(event:Event) {
 		// Skip sending the form
-		e.preventDefault();
+		event.preventDefault();
 		console.log("Hello world!");
-		return false;		
+		//return false;		
 	}
 
 }

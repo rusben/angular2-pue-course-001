@@ -11,10 +11,14 @@ import { Component } from '@angular/core';
 export class AppComponent  { 
 	name = 'Rubén'; 
 	surname = 'Arroyo';
-	projectName:string = 'Test Name';
+	projectName:string = 'Angular2 First App';
 
 	getNameSurname() {
 		return this.name + ' ' + this.surname;
+	}
+
+	sendButtonAction(message:string):void {
+		alert(message);
 	}
 }
 
